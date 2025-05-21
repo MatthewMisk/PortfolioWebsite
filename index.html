@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateusz Miskiewicz - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Optional: Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mateusz Miskiewicz</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="cv.html" target="_blank">CV</a></li>
+                <li><a href="qr.html" target="_blank">Share</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Hello, I'm Mateusz Miskiewicz</h1>
+                <p class="subtitle">Innovative Technologist & AI Enthusiast</p>
+                <p>Adaptable and driven professional passionate about AI, prompt engineering, web development, and hardware solutions.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <!-- <img src="assets/images/profile.jpg" alt="Mateusz Miskiewicz" class="profile-pic"> -->
+                <div class="about-text">
+                    <p>Adaptable and driven professional who became fluent in English within a year of relocating at age 8, earning placement in top academic sets by Year 7. I bring enthusiasm, decisiveness, and a track record of turning challenges into high impact outcomes.</p>
+                    <p>My journey has led me through diverse roles, from IT Technician and freelance AI Prompt Engineer to Web Developer Intern. I thrive on problem-solving and creating innovative solutions, whether it's crafting custom hardware, developing intelligent software, or building engaging web experiences.</p>
+                    <h3>Key Skills:</h3>
+                    <ul>
+                        <li>AI Prompt Engineering (ChatGPT, Claude, Llama, Gemini, Grok)</li>
+                        <li>Programming: Python, HTML, CSS, JavaScript, C#</li>
+                        <li>Hardware Modification & Electronics</li>
+                        <li>Web Development & Design</li>
+                        <li>Automation & Scripting</li>
+                        <li>Problem-Solving & Leadership</li>
+                        <li>Fluent in English and Polish</li>
+                        <li>Digital Tools: MS Office, Google Workspace, Adobe Suite, Sony Vegas, Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <h2>My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="electronics">Electronics & Hardware</button>
+                <button class="filter-btn" data-filter="software">Software & AI Scripts</button>
+                <button class="filter-btn" data-filter="web">Websites & AI Web Apps</button>
+            </div>
+            <div class="project-grid">
+                <!-- Project Cards will be injected here by JS or hardcoded -->
+                <!-- Example Project Card Structure:
+                <div class="project-card" data-category="electronics">
+                    <img src="assets/images/steamdeck_diy.jpg" alt="DIY SteamDeck">
+                    <div class="project-info">
+                        <h3>DIY Handheld Gaming PC</h3>
+                        <p>Custom-built SteamDeck-like machine using a laptop motherboard, iPad display, and 3D-printed components.</p>
+                        <button class="btn-details" data-project-id="steamdeck">View Details</button>
+                    </div>
+                </div>
+                -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2>Get In Touch</h2>
+            <p>Interested in collaborating or want to learn more? Reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:mateusz.miskiewicz04@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> Email Me</a>
+                <!-- Add LinkedIn if you have one -->
+                <!-- <a href="YOUR_LINKEDIN_URL" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a> -->
+                 <a href="tel:07465421513" class="contact-link"><i class="fas fa-phone"></i> Call Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> Mateusz Miskiewicz. All rights reserved.</p>
+    </footer>
+
+    <!-- Project Modal Structure (hidden by default) -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3 id="modalTitle"></h3>
+            <div id="modalMedia"></div> <!-- For images/videos -->
+            <p id="modalDescription"></p>
+            <ul id="modalTechStack"></ul>
+            <a id="modalLink" href="#" target="_blank" class="btn" style="display:none;">Visit Project</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

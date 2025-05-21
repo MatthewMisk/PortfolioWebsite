@@ -4,46 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Mateusz Miskiewicz</title>
-    <link rel="stylesheet" href="style.css"> <!-- Reuse main styles for consistency -->
+    <link rel="stylesheet" href="style.css"> <!-- Reuse main styles for header and base -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* CV-specific styles */
         body {
             background-color: #f4f4f4; /* Lighter theme for CV page body */
             color: #333;
-            padding-top: 0; /* Ensure no extra padding from main styles if body is targeted */
+            padding-top: 80px; /* Adjust based on actual header height to prevent content overlap */
         }
 
         .cv-container {
             max-width: 800px;
-            /* Increased top margin to clear main site's fixed header (approx 80-90px height) */
-            margin: 90px auto 2rem; /* 90px top, auto L/R, 2rem bottom */
+            margin: 2rem auto; /* Top margin now handled by body padding-top */
             padding: 2rem;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        /* === STYLES FOR THE CV'S OWN HEADER (NAME AND DETAILS) === */
-        .cv-header {
-            position: static !important; /* KEY FIX: Override fixed/sticky positioning from style.css */
-            background-color: transparent !important; /* Remove inherited blue background */
-            color: inherit !important; /* Use text colors defined for .cv-container */
-            padding: 0 !important; /* Reset padding if inherited */
+        /* Styles for the CV's own "header" section (name and details) */
+        .cv-document-header { /* Renamed to avoid conflict with main <header> */
             margin-bottom: 1.5rem; /* Space below CV header, before download button */
-            box-shadow: none !important; /* Remove shadow if inherited */
-            width: auto !important; /* Reset width constraints if inherited */
-            z-index: auto !important; /* Reset z-index */
-            /* Remove any other fixed-header specific styles if they were inherited */
-            top: auto !important;
-            left: auto !important;
         }
 
-        .cv-header h1 {
-            /* Ensure h1 styling is appropriate for static header */
-            margin-top: 0; /* Remove any top margin if it was for fixed layout */
+        .cv-document-header h1 {
+            color: #2c3e50;
+            margin-top: 0;
         }
-        /* ========================================================== */
+        /* End of CV's own "header" section styles */
 
-        .cv-container h1, .cv-container h2 { /* This applies to .cv-header h1 too */
+        .cv-container h2 {
             color: #2c3e50;
         }
         .cv-section {
@@ -74,12 +65,12 @@
         }
         .contact-info p {
             margin: 0.3rem 0;
-            color: #333; /* Ensure contact info text is readable */
+            color: #333;
         }
         .download-cv {
             display: block;
             width: fit-content;
-            margin: 2rem auto 1rem; /* Adjusted margin */
+            margin: 2rem auto 1rem;
             padding: 0.8rem 1.5rem;
             background-color: #3498db;
             color: white;
@@ -90,19 +81,38 @@
         .download-cv:hover {
             background-color: #2980b9;
         }
+
+        /* Ensure footer is not overlapped by content if added to this page */
+        /* For now, assuming no separate footer here, main site footer not included */
     </style>
 </head>
 <body>
+    <header> <!-- Copied from index.html -->
+        <nav>
+            <div class="logo">Mateusz Miskiewicz</div>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="cv.html" class="active-cv-link">CV</a></li> <!-- Can style this if needed -->
+                <li><a href="qr.html">Share</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
     <div class="cv-container">
-        <header class="cv-header">
+        <div class="cv-document-header"> <!-- Renamed class -->
             <h1>Mateusz Miskiewicz</h1>
             <div class="contact-info">
                 <p>Email: mateusz.miskiewicz04@gmail.com</p>
                 <p>Phone: 07465421513</p>
-                <!-- <p>LinkedIn: yourlinkedin.com/in/mateuszm</p> -->
-                <p>Location: Birmingham, England</p>
+                <p>Location: Birmingham, England (General Area)</p>
             </div>
-        </header>
+        </div>
 
         <a href="assets/documents/Mateusz_Miskiewicz_CV_Redacted.pdf" download="Mateusz_Miskiewicz_CV.pdf" class="download-cv">Download PDF Version</a>
 
@@ -111,6 +121,7 @@
             <p>Adaptable and driven professional who became fluent in English within a year of relocating at age 8, earning placement in top academic sets by Year 7. I bring enthusiasm, decisiveness, and a track record of turning challenges into high impact outcomes.</p>
         </section>
 
+        <!-- ... (rest of your CV content remains the same) ... -->
         <section class="cv-section">
             <h2>Work Experience</h2>
             <div class="cv-item">
@@ -181,5 +192,7 @@
             </ul>
         </section>
     </div>
+
+    <script src="script.js"></script> <!-- Script for mobile nav toggle -->
 </body>
 </html>

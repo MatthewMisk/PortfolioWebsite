@@ -32,7 +32,7 @@
         <section id="hero" class="hero-section">
             <div class="hero-content">
                 <h1>Hello, I'm Mateusz Miskiewicz</h1>
-                <p class="subtitle">Innovative Technologist & AI Enthusiast</p>
+                <p class="subtitle">Innovative Technologist, Programmer & AI Enthusiast</p>
                 <p>Adaptable and driven professional passionate about AI, prompt engineering, web development, and hardware solutions.</p>
                 <a href="#projects" class="btn">View My Work</a>
             </div>
@@ -85,6 +85,27 @@
             </div>
         </section>
     </main>
+
+    <!-- Chatbot -->
+    <button id="chatbot-toggle-btn" aria-label="Open Chatbot">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <div id="chatbot-container" class="hidden">
+        <div id="chatbot-header">
+            <span>Portfolio AI Assistant</span>
+            <button id="chatbot-close-btn" aria-label="Close Chatbot">×</button>
+        </div>
+        <div id="chatbot-messages">
+            <!-- Initial welcome message will be added by JS -->
+        </div>
+        <div id="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Ask me anything...">
+            <button id="chatbot-send-btn" aria-label="Send Message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
 
     <footer>
         <p>© <span id="currentYear"></span> Mateusz Miskiewicz. All rights reserved.</p>

@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             techStack: ['HTML', 'CSS', 'JavaScript'],
             link: 'https://nyxnieruchomosci.com/'
         },
-        { // 9. Chronoflux Media Website
+        { // 9. Chronoflux Media Website (LINK UPDATED)
             id: 'chronoflux',
             title: 'Chronoflux Media Website',
             category: 'web',
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { type: 'image', src: 'assets/images/chronoflux_website3.jpg' }
             ],
             techStack: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
-            link: 'YOUR_CHRONOFLUX_URL_HERE'
+            link: 'https://www.chronofluxmedia.com/'
         },
         { // 10. 1080p External Laptop Display (Moved Down)
             id: 'external_1080p',
@@ -265,6 +265,22 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             techStack: ['HTML', 'CSS', 'JavaScript'],
             link: 'https://mymerryhill.co.uk/shops-and-attractions/shake-stop/'
+        },
+        { // 16. AI Image Generator Web App (MOVED TO END & UPDATED)
+            id: 'ai_image_generator',
+            title: 'AI Image Generator Web App',
+            category: 'web',
+            image: 'assets/images/ai_image_generator_gallery.jpg',
+            shortDescription: 'Generate high-quality AI images with multiple models, resolutions, and a "Surprise Me" feature.',
+            fullDescription: `A sophisticated AI image generation web app built with Next.js and React. Users can enter a descriptive prompt, choose between advanced AI models like Flux and Turbo, select various aspect ratios, and define custom resolutions. It includes a 'Surprise Me' button for random prompt generation, a gallery page to view previously created images, and a helpful chatbot.<br><br><strong>Disclaimer:</strong> This project utilizes free APIs for its image generation services. As such, the service may occasionally experience downtime or reach rate limits, which can prevent images from loading. The application's core functionality is working as demonstrated in the screenshots.`,
+            media: [
+                { type: 'image', src: 'assets/images/ai_image_generator_main.jpg' },
+                { type: 'image', src: 'assets/images/ai_image_generator_gallery.jpg' },
+                { type: 'image', src: 'assets/images/ai_image_generator_about.jpg' },
+                { type: 'image', src: 'assets/images/ai_image_generator_chat.jpg' } // Add your new chatbot screenshot here
+            ],
+            techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Pollinations API'],
+            link: 'https://mm-image-gen.netlify.app/'
         }
     ];
 

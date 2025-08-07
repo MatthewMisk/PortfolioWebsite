@@ -34,35 +34,6 @@
         }
         /* End of CV's own "header" section styles */
 
-        .cv-container h2 {
-            color: #2c3e50;
-        }
-        .cv-section {
-            margin-bottom: 1.5rem;
-        }
-        .cv-section h2 {
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        .cv-item {
-            margin-bottom: 1rem;
-        }
-        .cv-item h3 {
-            margin: 0 0 0.2rem 0;
-            color: #34495e;
-        }
-        .cv-item p, .cv-item ul {
-            margin: 0.2rem 0 0.5rem 0;
-            line-height: 1.6;
-        }
-        .cv-item ul {
-            list-style-position: inside;
-            padding-left: 0;
-        }
-        .cv-item strong {
-            font-weight: 600;
-        }
         .contact-info p {
             margin: 0.3rem 0;
             color: #333;
@@ -82,8 +53,21 @@
             background-color: #2980b9;
         }
 
-        /* Ensure footer is not overlapped by content if added to this page */
-        /* For now, assuming no separate footer here, main site footer not included */
+        /* --- STYLE ADDED FOR CV IMAGE --- */
+        .cv-image-container {
+            margin-top: 2rem; /* Space below the download button */
+            text-align: center; /* Center the image */
+        }
+        .cv-image-container img {
+            width: 100%; /* Make image responsive */
+            max-width: 100%;
+            display: block;
+            margin: 0 auto 1rem auto; /* Center and add space below if you have multiple pages */
+            border: 1px solid #ccc; /* A light border to frame it */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        }
+        /* --- END OF ADDED STYLE --- */
+
     </style>
 </head>
 <body>
@@ -116,81 +100,23 @@
 
         <a href="assets/documents/Mateusz_Miskiewicz_CV_Redacted.pdf" download="Mateusz_Miskiewicz_CV.pdf" class="download-cv">Download PDF Version</a>
 
-        <section class="cv-section">
-            <h2>Personal Statement</h2>
-            <p>Adaptable and driven professional who became fluent in English within a year of relocating at age 8, earning placement in top academic sets by Year 7. I bring enthusiasm, decisiveness, and a track record of turning challenges into high impact outcomes.</p>
-        </section>
+        <!-- === MODIFIED SECTION: CV IMAGE === -->
+        <!-- All previous <section> elements have been removed -->
+        <div class="cv-image-container">
+            <!-- 
+                ACTION REQUIRED: 
+                1. Create a PNG or JPG image of your CV.
+                2. Save it as "Mateusz_Miskiewicz_CV_Image.png" in the "assets/images/" folder.
+                3. If your CV has multiple pages, create an image for each and add another <img> tag below.
+            -->
+            <img src="assets/images/Mateusz_Miskiewicz_CV_Image.png" alt="An image of the Curriculum Vitae for Mateusz Miskiewicz">
+            
+            <!-- Example for a second page:
+            <img src="assets/images/Mateusz_Miskiewicz_CV_Image_Page2.png" alt="An image of the Curriculum Vitae for Mateusz Miskiewicz - Page 2">
+            -->
+        </div>
+        <!-- === END OF MODIFIED SECTION === -->
 
-        <!-- ... (rest of your CV content remains the same) ... -->
-        <section class="cv-section">
-            <h2>Work Experience</h2>
-            <div class="cv-item">
-                <h3>AI and Prompt Engineering Projects (Freelance, 2022-Present)</h3>
-                <ul>
-                    <li>Expertly crafted and optimised prompts for AI models including OpenAI ChatGPT, Claude, Llama, Gemini, Deepseek, Grok and many others.</li>
-                    <li>Integrated AI for content creation, process automation, data analysis, and enhanced customer engagement.</li>
-                    <li>Utilised Python, and other tools to automate workflows and improve decision making through enhanced analytics.</li>
-                </ul>
-            </div>
-            <div class="cv-item">
-                <h3>NYX Nieruchomości Real Estate | Social Media, Web & Tools Developer Intern (2023-2025)</h3>
-                <ul>
-                    <li>Developed and managed social media strategies, significantly enhancing online presence and client engagement.</li>
-                    <li>Designed and implemented internal software tools (e.g. using Python scripts) to automate administrative tasks and improve operational efficiency.</li>
-                    <li>Designed, developed, maintained, and updated the company website, improving functionality and user experience.</li>
-                </ul>
-            </div>
-            <div class="cv-item">
-                <h3>Bishop Challoner Catholic College | IT Technician (2020-2022)</h3>
-                <ul>
-                    <li>Became the top specialist in laptop repair and network management, providing tech support that enhanced department efficiency.</li>
-                    <li>Quickly became the most proficient laptop and computer hardware repair specialist in the department.</li>
-                    <li>Gained diverse IT skills, including installing operating systems and managing networks.</li>
-                </ul>
-            </div>
-            <div class="cv-item">
-                <h3>Cell Tech, Mobile Repair | Customer Service Specialist (2018-2019)</h3>
-                <ul>
-                    <li>Achieved a 30% revenue increase as the top salesperson.</li>
-                    <li>Enhanced customer experience by delivering excellent service and managing the entire sales process.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="cv-section">
-            <h2>Education</h2>
-            <div class="cv-item">
-                <h3>Birmingham City University</h3>
-                <p><strong>BSc Business and Information Technology (2022-2025):</strong> Predicted 1st Class</p>
-            </div>
-            <div class="cv-item">
-                <h3>Bishop Challoner Catholic College</h3>
-                <p><strong>A Levels (2020-2022):</strong> ICT - A*, Computer Science - B, Business - C</p>
-                <p><strong>Secondary School (GCSE 2017-2020):</strong> Polish: Grade 9, Business: Grade 7, History: Grade 7, Computer Science: Grade 6, Mathematics: Grade 6, English Literature: Grade 6</p>
-            </div>
-        </section>
-
-        <section class="cv-section">
-            <h2>Key Skills</h2>
-            <ul>
-                <li><strong>AI Prompt Engineering:</strong> Extensive experience in AI prompting with tools like ChatGPT, Claude, Llama, Gemini, Deepseek, Grok and many others.</li>
-                <li><strong>Programming:</strong> Proficient in Python, HTML and C#, with expertise in AI-driven automation and analytics.</li>
-                <li><strong>Problem-Solving & Leadership:</strong> Proven through IT management, sales, and multi-channel social media strategy.</li>
-                <li><strong>Languages:</strong> Fluent in English and Polish, facilitating communication in diverse settings.</li>
-                <li><strong>Digital & Creative Tools:</strong> Skilled in MS Office, Google Workspace, Adobe Suite, Sony Vegas, and Photoshop.</li>
-                <li><strong>Hardware & Electronics:</strong> Custom PC building, component modification, soldering, 3D printing integration.</li>
-            </ul>
-        </section>
-
-        <section class="cv-section">
-            <h2>Interests and Achievements</h2>
-            <ul>
-                <li>Quickly became fluent in English after moving to the UK at age 8, progressing to top academic sets.</li>
-                <li>Fitness and nutrition enthusiast.</li>
-                <li>Experienced in stock investing, crypto trading, and futures, developing a strong foundation in risk management and proper thoughtful research.</li>
-                <li>Creator of multiple custom hardware projects, including handheld gaming devices and portable displays.</li>
-            </ul>
-        </section>
     </div>
 
     <script src="script.js"></script> <!-- Script for mobile nav toggle -->

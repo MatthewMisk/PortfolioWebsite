@@ -279,8 +279,81 @@ document.addEventListener('DOMContentLoaded', () => {
                 { type: 'image', src: 'assets/images/ai_image_generator_about.jpg' },
                 { type: 'image', src: 'assets/images/ai_image_generator_chat.jpg' } // Add your new chatbot screenshot here
             ],
-            techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Pollinations API'],
+            techStack:['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Pollinations API'],
             link: 'https://mm-image-gen.netlify.app/'
+        },
+        { // 17. NYX Nieruchomości Check-in System
+            id: 'nyx_checkin',
+            title: 'NYX Nieruchomości Check-in System',
+            category: 'web',
+            image: 'assets/images/nyx_checkin1.jpg',
+            shortDescription: 'Secure, legally-compliant automated check-in system for short-term rentals.',
+            fullDescription: `An internal Airbnb/Booking.com style check-in system developed for NYX Nieruchomości. Hosted on LH.pl servers, this tool securely collects guests' personal information and ID details in strict accordance with Polish law. It automatically generates a signed, virtual PDF document of the check-in and emails a copy to the handling employee or owner. This ensures a smooth check-in process while providing crucial security and traceability in case of property issues.`,
+            media:[
+                { type: 'image', src: 'assets/images/nyx_checkin1.jpg' },
+                { type: 'image', src: 'assets/images/nyx_checkin2.jpg' },
+                { type: 'image', src: 'assets/images/nyx_checkin_pdf_example.jpg' }
+            ],
+            techStack:['Web Development', 'Backend Processing', 'PDF Generation', 'Email Automation', 'Data Security'],
+            link: null
+        },
+        { // 18. NYX Utility Bill Calculator
+            id: 'nyx_bill_calculator',
+            title: 'NYX Utility Bill Calculator',
+            category: 'software',
+            image: 'assets/images/nyx_bills1.jpg',
+            shortDescription: 'Internal tool for calculating client utility bills (gas, water, electricity).',
+            fullDescription: `A specialized internal program created for NYX Nieruchomości to streamline property management tasks. This tool calculates total utility bills for clients, accurately tallying up costs for gas, water, and electricity based on meter readings and current rates, saving hours of manual calculation.`,
+            media:[
+                { type: 'image', src: 'assets/images/nyx_bills1.jpg' },
+                { type: 'image', src: 'assets/images/nyx_bills2.jpg' }
+            ],
+            techStack: ['Software Development', 'Data Processing', 'Automation'],
+            link: null
+        },
+        { // 19. GUI Data Compression Tool
+            id: 'gui_compression_tool',
+            title: 'GUI Data Compression Tool',
+            category: 'software',
+            image: 'assets/images/gui_compressor1.jpg',
+            shortDescription: 'User-friendly GUI script to compress files for email attachment limits.',
+            fullDescription: `Developed to solve a specific workflow bottleneck: sending large files via Gmail. This tool features a clean Graphical User Interface (GUI) that allows users to easily select and compress data/files to fit within Gmail's strict attachment size limits (e.g., 25MB) before sending.`,
+            media:[
+                { type: 'image', src: 'assets/images/gui_compressor1.jpg' },
+                { type: 'image', src: 'assets/images/gui_compressor2.jpg' }
+            ],
+            techStack:['Python', 'Tkinter/PyQt (GUI)', 'Data Compression'],
+            link: null
+        },
+        { // 20. Forex Trading Discord Server & Bots
+            id: 'forex_discord_bots',
+            title: 'Forex Trading Discord Server & Bots',
+            category: 'software',
+            image: 'assets/images/forex_discord1.jpg',
+            shortDescription: 'Comprehensive Discord server with custom scrapers and bots for Forex trading.',
+            fullDescription: `A highly sophisticated Discord server built for a Forex trading client. It features multiple custom bots and channels: a Twitter notification scraper for top 5 accounts, a world-first Truth Social scraper for Donald Trump's posts (built without official API support), a CSV trade uploader channel, a news channel pulling from major financial sources, a market context engine, and an ATR data logger.`,
+            media:[
+                { type: 'image', src: 'assets/images/forex_discord1.jpg' },
+                { type: 'image', src: 'assets/images/forex_discord_truth.jpg' },
+                { type: 'image', src: 'assets/images/forex_discord_twitter.jpg' },
+                { type: 'image', src: 'assets/images/forex_discord_trades.jpg' }
+            ],
+            techStack: ['Python', 'Discord API', 'Web Scraping', 'Data Parsing', 'Automation'],
+            link: null
+        },
+        { // 21. Telegram Video Downloader Bot
+            id: 'telegram_video_downloader',
+            title: 'Telegram Video Downloader Bot',
+            category: 'software',
+            image: 'assets/images/telegram_bot1.jpg',
+            shortDescription: 'Bot that downloads and organizes videos from TikTok, IG, YT, X, and Threads.',
+            fullDescription: `A custom Telegram bot designed to download videos from all major social media platforms including TikTok, Instagram, YouTube, Twitter/X, and Threads. To save local phone storage and maintain organization, the bot automatically categorizes and saves the downloaded videos into specific topic-based Telegram channels.`,
+            media:[
+                { type: 'image', src: 'assets/images/telegram_bot1.jpg' },
+                { type: 'image', src: 'assets/images/telegram_bot2.jpg' }
+            ],
+            techStack:['Python', 'Telegram Bot API', 'Video Downloading Libraries (yt-dlp)'],
+            link: null
         }
     ];
 
@@ -520,12 +593,15 @@ Website Structure (for your knowledge, don't list all sections unless asked for 
 - Project Details: Users can click "View Details" on project cards for more info.
 - CV Page: Contains the full CV and a download link for the PDF.
 
-Notable Project Insights (for your knowledge, mention these if relevant to questions like "favorite project" or "challenging project"):
+- Notable Project Insights (for your knowledge, mention these if relevant to questions like "favorite project" or "challenging project"):
 -   **DIY Handheld Gaming PC (SteamDeck-like):** This was a significant passion project involving salvaging parts (laptop motherboard, iPad display), custom fabrication (acrylic casing), intricate soldering (battery connector), and extensive software/hardware modding for performance (cooling, TDP, overclocking). It showcases resourcefulness, technical skill, and perseverance through complex challenges. If asked about a "hardest" or "most complex" project, this is a strong candidate due to the integration of many disparate components and problem-solving involved.
 -   **AI-Enhanced Notes App (Google Keep Inspired):** This project demonstrates Mateusz's interest in practical AI applications and web development (HTML, CSS, JS, AI API). It shows his ability to take inspiration from existing popular tools and add innovative AI features.
 -   **AI TikTok Content Automation Script:** Highlights skills in Python, AI API integration (Gemini for scripts, AI image generation, TTS), and automation. It's a good example of leveraging multiple AI technologies to create a functional tool. This could be mentioned if asked about innovative AI use.
 -   **3D Printer/CNC Control Software (FYP):** This was his university final year project, demonstrating more formal software development skills (Python, Tkinter GUI), G-code parsing, serial communication, and even an integrated AI assistant for the machine. This is a good example of a comprehensive software project with practical application.
 -   **Laptop Performance Cooling Mod / External Displays:** These smaller hardware projects showcase practical electronics skills, soldering, custom fabrication (heatsinks, 3D printing), and resourcefulness in improving existing tech or creating new tools from salvaged parts.
+-   **NYX Nieruchomości Tools:** Developed a legally-compliant check-in system for short-term rentals, a utility bill calculator, and a GUI data compression tool to bypass email limits.
+-   **Forex Trading Discord Server:** Built a comprehensive server with custom scrapers (including a world-first Truth Social scraper) and bots for a Forex trader.
+-   **Telegram Video Downloader Bot:** Created a bot to download and organize videos from major social platforms into Telegram channels to save local storage.
 
 Interaction Guidelines:
 1.  **Use Conversation History:** Pay close attention to the provided chat history. If the user just asked "who is he?" and you answered, and they follow up with "sure" (implying they want more info on what you just offered), continue that thread. Don't restart the conversation or ask "how can I help?" again.
@@ -603,15 +679,31 @@ Remember: CONCISENESS and natural conversation, using the provided history, are 
         chatbotSendBtn.disabled = true;
         addMessageToChat('Typing...', 'ai', true);
 
-        const historyContext = formatChatHistoryForPrompt(chatHistory, MAX_HISTORY_TURNS);
-        const fullPromptContent = historyContext + userInput; 
-
         try {
-            const encodedFullPrompt = encodeURIComponent(fullPromptContent);
-            const encodedSystemPrompt = encodeURIComponent(MATEUSZ_PORTFOLIO_SYSTEM_PROMPT);
-            const apiUrl = `https://text.pollinations.ai/${encodedFullPrompt}?model=mistral&system=${encodedSystemPrompt}&private=true&referrer=MateuszPortfolioChatbotV4`; // V4 for new prompt
+            // Prepare messages array for Groq API
+            const apiMessages =[
+                { role: 'system', content: MATEUSZ_PORTFOLIO_SYSTEM_PROMPT }
+            ];
             
-            const response = await fetch(apiUrl);
+            // Add recent history
+            const recentHistory = chatHistory.slice(-(MAX_HISTORY_TURNS * 2 + 1)); // Include current message
+            recentHistory.forEach(msg => {
+                apiMessages.push({
+                    role: msg.role === 'ai' ? 'assistant' : 'user',
+                    content: msg.content
+                });
+            });
+
+            // Call the secure Netlify Function instead of Groq directly
+            const response = await fetch('/.netlify/functions/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    messages: apiMessages
+                })
+            });
             
             const typingIndicator = document.getElementById('typing-indicator');
             if (typingIndicator) {
@@ -623,7 +715,9 @@ Remember: CONCISENESS and natural conversation, using the provided history, are 
                 throw new Error(`API Error: ${response.status} - ${errorText || 'Failed to fetch response'}`);
             }
             
-            const aiResponseText = await response.text();
+            const data = await response.json();
+            const aiResponseText = data.choices[0].message.content;
+            
             addMessageToChat(aiResponseText.trim(), 'ai');
             chatHistory.push({ role: 'ai', content: aiResponseText.trim() });
 

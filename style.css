@@ -720,3 +720,15 @@ footer {
         right: 15px;
     }
 }
+
+.ba-tag {
+    background-color: var(--text-color);
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}

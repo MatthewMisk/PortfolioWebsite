@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'web',
             image: 'assets/images/nyx_checkin1.jpg',
             shortDescription: 'Secure, legally-compliant automated check-in system for short-term rentals.',
-            fullDescription: `An internal Airbnb/Booking.com style check-in system developed for NYX Nieruchomości. Hosted on LH.pl servers, this tool securely collects guests' personal information and ID details in strict accordance with Polish law. It automatically generates a signed, virtual PDF document of the check-in and emails a copy to the handling employee or owner. This ensures a smooth check-in process while providing crucial security and traceability in case of property issues.`,
+            fullDescription: `<strong>Business Challenge:</strong> Manual guest check-ins were time-consuming and posed a significant legal risk regarding Data Protection (GDPR) and guest traceability.<br><br><strong>Analysis & Requirements:</strong> Conducted a process audit of short-term rental workflows. Identified the need for a secure, legally-compliant digital pipeline that captures ID data and generates binding documentation automatically.<br><br><strong>The Solution:</strong> Developed a custom web-based check-in system hosted on LH.pl. The system automates the collection of personal data and generates a signed virtual PDF copy for company records.<br><br><strong>Business Value:</strong> Mitigated legal liability, ensured 100% compliance with Polish rental laws, and reduced administrative check-in time per guest by approximately 70%.`,
             media:[
                 { type: 'image', src: 'assets/images/nyx_checkin1.jpg' },
                 { type: 'image', src: 'assets/images/nyx_checkin2.jpg' },
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'software',
             image: 'assets/images/nyx_bills1.jpg',
             shortDescription: 'Internal tool for calculating client utility bills (gas, water, electricity).',
-            fullDescription: `A specialized internal program created for NYX Nieruchomości to streamline property management tasks. This tool calculates total utility bills for clients, accurately tallying up costs for gas, water, and electricity based on meter readings and current rates, saving hours of manual calculation.`,
+            fullDescription: `<strong>Business Challenge:</strong> Manual calculation of utility bills (Gas/Water/Electric) across multiple properties was prone to human error and resulted in delayed billing cycles.<br><br><strong>Analysis:</strong> Mapped the data flow from meter readings to final invoice. Identified key variables (rates, consumption tiers, and VAT) to standardize the calculation logic.<br><br><strong>The Solution:</strong> Built an automated internal tool that processes meter data and outputs finalized totals instantly.<br><br><strong>Business Value:</strong> Eliminated calculation errors and reduced the monthly billing processing time from several hours to minutes, improving company cash flow and client trust.`,
             media:[
                 { type: 'image', src: 'assets/images/nyx_bills1.jpg' },
                 { type: 'image', src: 'assets/images/nyx_bills2.jpg' }
@@ -386,9 +386,12 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const imageSrc = project.image || 'assets/images/default_project_placeholder.png';
 
+            const baTag = (project.id.includes('nyx') || project.id.includes('forex')) ? '<span class="ba-tag">Business Analysis Case</span>' : '';
+
             card.innerHTML = `
                 <img src="${imageSrc}" alt="${project.title}">
                 <div class="project-info">
+                    ${baTag}
                     <h3>${project.title}</h3>
                     <p>${project.shortDescription}</p>
                     <button class="btn-details" data-project-id="${project.id}">View Details</button>
